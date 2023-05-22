@@ -25,6 +25,7 @@ def firms_to_csv(lst):
     with open("firms.csv", 'w', newline=newline) as of:
         return_file = csv.writer(of)
         
+        return_file.writerow(["Name","Prices"])
         for element in lst:
             return_file.writerow([str(element.name), [price for price in element.prices]])
 
@@ -33,6 +34,7 @@ def firms_from_csv():
     char_removal = ["[", "]", " "]
     with open("firms.csv") as csv_file:
         csv_reader = csv.reader(csv_file)
+        next(csv_reader)
         lst = [rows for rows in csv_reader]
     for element in lst:
         # Make the prices, into a list of strings
