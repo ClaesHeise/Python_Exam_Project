@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+#pip install matplotlib
 from FirmClass import Firm
 
 
@@ -23,6 +25,8 @@ def df_to_firms():
         output.append(Firm(firms_df["Name"][index], l))
     return output
 
+
+# Herfra
 # Finder det firma, med den laveste pris i procent, i forhold til dens forrige priser og returnerer det object (FirmClass)
 def cheapest_firm_percentage():
     firms = df_to_firms()
@@ -66,6 +70,20 @@ def get_most_expensive_firm():
             i_max = tuple
     return i_max
 
+def dataframe_from_list(x):
+    df_element = firms_df["Prices"][x]
+    lst = [float(y.strip(' []')) for y in df_element.split(',')]
+    new_df = pd.DataFrame(lst, index=list(range(1, len(lst)+1)), columns=['Prices for each day'])
+    df_plot = new_df.plot(title=firms_df["Name"][x], xlabel="Days", ylabel="Prices")
+    fig = df_plot.get_figure()
+    fig.savefig((firms_df["Name"][x])+".png")
+    # df_plot.set_xlabel("Days")
+    # df_plot.set_ylabel("Prices")
+    # plt.show()
+    # first_element = list
+    # print(new_df)
+
+dataframe_from_list(2)
 ## Prints
 # printer det billigste firma i procent
 print("Cheapest firm in percentage")

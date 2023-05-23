@@ -3,6 +3,8 @@ import platform
 from FirmClass import Firm
 from AllFirmsClass import AllFirms
 import pandas as pd
+import TestProgram
+import PandaOp
 import csv
 firm1 = Firm("Microsoft", [0.2, 0.15, 0.32])
 firm2 = Firm("Apple", [0.03, 0.3, 100])
@@ -11,14 +13,17 @@ firmList = []
 ##firmList.append(firm1)
 ##firmList.append(firm2)
 ##firmList.append(firm3)
-with open('FirmClasses/firms.csv') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    line_count = 0
-    for row in csv_reader:
-        line_count += 1
-        firm1 = Firm(row[0],row[1])
-        firmList.append(firm1)
-    print(f'Processed {line_count} lines.')
+# with open('firms.csv') as csv_file:
+#     csv_reader = csv.reader(csv_file, delimiter=',')
+#     line_count = 0
+#     for row in csv_reader:
+#         line_count += 1
+#         firm1 = Firm(row[0],row[1])
+#         firmList.append(firm1)
+#     print(f'Processed {line_count} lines.')
+
+firmList = TestProgram.firms_from_csv()
+
 def selectFirm(firmList):
     print("Please select a name from the list:")
     for i, Firm in enumerate(firmList):
@@ -44,6 +49,8 @@ def selectFirm(firmList):
             print(f"{selected_Firm.name}")
         elif selected_index == 4:
             i=1
+        elif selected_index == 5:
+            PandaOp.dataframe_from_list(selected_index)
 
 
 
