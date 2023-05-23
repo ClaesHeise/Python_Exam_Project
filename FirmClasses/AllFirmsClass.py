@@ -24,9 +24,11 @@ class AllFirms():
             newline = ''
         else:
             newline = None
-        print("Hello")
+        print("Hello2")
         with open("firms.csv", 'w', newline=newline) as of:
             return_file = csv.writer(of)
             
+            return_file.writerow(["Name","Prices"])
             for element in self.firms:
-                return_file.writerow([str(element.name), [[price] for price in element.prices]])
+
+                return_file.writerow([str(element.name), [price for price in element.prices]])
