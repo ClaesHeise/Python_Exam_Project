@@ -10,26 +10,32 @@ firm1 = Firm("Microsoft", [0.2, 0.15, 0.32])
 firm2 = Firm("Apple", [0.03, 0.3, 100])
 firm3 = Firm("Steam", [0.2, 0.05, 0.01])
 firmList = []
-##firmList.append(firm1)
-##firmList.append(firm2)
-##firmList.append(firm3)
-# with open('firms.csv') as csv_file:
-#     csv_reader = csv.reader(csv_file, delimiter=',')
-#     line_count = 0
-#     for row in csv_reader:
-#         line_count += 1
-#         firm1 = Firm(row[0],row[1])
-#         firmList.append(firm1)
-#     print(f'Processed {line_count} lines.')
 
 firmList = TestProgram.firms_from_csv()
 
 def selectFirm(firmList):
     print("Please select a name from the list:")
+    print("'lowest': Show the company with the lowest average cost")
+    print("'highest': Show the company with the highest average cost")
+    print("'lowestp': Show the company with the lowest average cost in procentage")
+    print("'allmin': show all minimum prices")
+    print("'allmax': show all maximum prices")
+
     for i, Firm in enumerate(firmList):
         print(f"{i+1}. {firmList[i].name}")
-    selected_index = int(input("Enter the number corresponding to your selection: ")) - 1
+    selected_index = str(input("Enter the number corresponding to your selection: "))
+    isNumber = True
+    try:
+        int(selected_index)
+    except ValueError:
+        isNumber = False
+    if(isNumber == True):
+        showAllFirms(selected_index)
+    else:
+        nonDirectChoice(selected_index)
 
+def showAllFirms(selected_index):
+    selected_index = int(selected_index)-1
     selected_Firm = firmList[selected_index]
     print(f"You selected:")
     print(f"{selected_Firm.name}")
@@ -38,6 +44,7 @@ def selectFirm(firmList):
     print("2. all the prices the company has had")
     print("3. the companies name")
     print("4. quit the program")
+    print("5. get the company with the average lowest price")
     i = 0
     while i != 1:
         selected_index = int(input())
@@ -52,6 +59,15 @@ def selectFirm(firmList):
         elif selected_index == 5:
             PandaOp.dataframe_from_list(selected_index)
 
-
-
+def nonDirectChoice(selected_index):
+    if selected_index == "lowestp":
+        print(PandaOp.cheapest_firm_percentage())
+    elif selected_index == "allmin":
+        print(PandaOp.get_all_min)
+    elif selected_index == "allmax":
+        print(PandaOp.get_all_max)
+    elif selected_index == "lowest":
+        print(PandaOp.get_cheapest_firm())
+    elif selected_index == "highest":
+        print(PandaOp.get_most_expensive_firm())
 selectFirm(firmList)
