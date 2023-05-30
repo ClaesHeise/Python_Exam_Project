@@ -29,7 +29,7 @@ The second part of the program, minded towards the user, is a program, that runs
 2) Write 'python Commandline.py' into the console
 3) Doing this, you're met with a few different options, such as selecting a specific firm, and look into their data, or get the cheapest firm, or get the most expensive firm, etc.
 4) Chosing the least- or most expensive firm, will return these values, and go back to step 3, but chosing a specific firm, will give you a new menu / options regarding this firm, such as getting the firms current price, compared to the average, all their prices, the company name and making a png file of the prices, plotted into a table, to show the development of the price.
-5) When done using the program, the program is closed by writting the corresponding number (written in the console).
+5) When done using the program, the program is closed by writting the corresponding text or number (written in the console).
 
 ## Status:
 Most of what we've planed, have been done. We've accomplished making a program, that takes firm names and their prices, and proces these, to give a user guide or an idea on which firm to invest in, based on empirical data, to reason for this choice.
