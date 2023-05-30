@@ -3,16 +3,16 @@ import platform
 from FirmClass import Firm
 from AllFirmsClass import AllFirms
 
-# firm1 = Firm("Microsoft", [0.2, 0.15, 0.32])
-# firm2 = Firm("Apple", [0.03, 0.3, 100])
-# firm3 = Firm("Steam", [0.2, 0.05, 0.01])
+firm1 = Firm("Microsoft", [0.2])
+firm2 = Firm("Apple", [0.03, 0.3, 100])
+firm3 = Firm("Steam", [0.2, 0.05, 0.01])
 
-# firmList = []
-# firmList.append(firm1)
-# firmList.append(firm2)
-# firmList.append(firm3)
+firmList = []
+firmList.append(firm1)
+firmList.append(firm2)
+firmList.append(firm3)
 
-# firms = AllFirms(firmList)
+firms = AllFirms(firmList)
 
 
 def firms_to_csv(lst):
@@ -25,11 +25,12 @@ def firms_to_csv(lst):
         
         return_file.writerow(["Name","Prices"])
         for element in lst:
-            return_file.writerow([str(element.name), [price for price in element.prices]])
+            ls = [price for price in element.prices]
+            return_file.writerow([str(element.name), ls])
 
 def firms_from_csv():
     list_of_firms = []
-    char_removal = ["[", "]", " "]
+    char_removal = ["[", "]", " ", '"']
     with open("firms.csv") as csv_file:
         csv_reader = csv.reader(csv_file)
         next(csv_reader)

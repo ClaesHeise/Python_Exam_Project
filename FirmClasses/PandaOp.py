@@ -1,6 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-#pip install matplotlib
 from FirmClass import Firm
 
 
@@ -83,7 +81,7 @@ def dataframe_from_list(x):
     # first_element = list
     # print(new_df)
 
-dataframe_from_list(2)
+dataframe_from_list(1)
 ## Prints
 # printer det billigste firma i procent
 print("Cheapest firm in percentage")

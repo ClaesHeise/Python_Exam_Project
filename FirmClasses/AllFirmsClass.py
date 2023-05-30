@@ -31,4 +31,4 @@ class AllFirms():
             return_file.writerow(["Name","Prices"])
             for element in self.firms:
 
-                return_file.writerow([str(element.name), [price for price in element.prices]])
+                return_file.writerow([str(element.name), str([price for price in element.prices])])
