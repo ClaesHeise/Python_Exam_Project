@@ -1,101 +1,137 @@
 Name,Prices
-MULNMullen Automotive,[0.95]
-NKLANikola,[0.81]
-QRTEAQurate Retail,[0.93]
-FFIEFaraday Future Intelligent Electric,[0.22]
-CSCredit Suisse Group,[0.89]
-GOEVCanoo,[0.65]
-WKHSWorkhorse Group,[0.92]
-INOInovio Pharmaceuticals,[0.67]
-AMRSAmyris,[0.71]
-WEWeWork,[0.21]
+MULNMullen Automotive,"[0.95, 0.81, 0.81]"
+NKLANikola,"[0.81, 0.59, 0.59]"
+QRTEAQurate Retail,"[0.93, 0.95, 0.95]"
+FFIEFaraday Future Intelligent Electric,"[0.22, 0.22, 0.22]"
+CSCredit Suisse Group,"[0.89, 0.87, 0.87]"
+GOEVCanoo,"[0.65, 0.59, 0.59]"
+WKHSWorkhorse Group,"[0.92, 0.86, 0.86]"
+INOInovio Pharmaceuticals,"[0.67, 0.62, 0.62]"
+AMRSAmyris,"[0.71, 0.69, 0.69]"
+WEWeWork,"[0.21, 0.19, 0.19]"
 RGTIRigetti Computing,[0.73]
-BNGOBionano Genomics,[0.68]
-OCGNOcugen,[0.72]
-MMATMeta Materials,[0.25]
-TUPTupperware Brands,[0.85]
-ACBAurora Cannabis,[0.67]
-TRKATroika Media Group,[0.19]
-SKLZSkillz,[0.54]
-SONDSonder,[0.59]
-NKTRNektar Therapeutics,[0.73]
+BNGOBionano Genomics,"[0.68, 0.64, 0.64]"
+OCGNOcugen,"[0.72, 0.46, 0.46]"
+MMATMeta Materials,"[0.25, 0.25, 0.25]"
+TUPTupperware Brands,"[0.85, 0.92, 0.92]"
+ACBAurora Cannabis,"[0.67, 0.54, 0.54]"
+TRKATroika Media Group,"[0.19, 0.15, 0.15]"
+SKLZSkillz,"[0.54, 0.5, 0.5]"
+SONDSonder,"[0.59, 0.56, 0.56]"
+NKTRNektar Therapeutics,"[0.73, 0.63, 0.63]"
 CELUCelularity,[0.68]
-NVOSNovo Integrated Sciences,[0.17]
+NVOSNovo Integrated Sciences,"[0.17, 0.14, 0.14]"
 RIDELordstown Motors,[0.3]
-BBBYBed Bath & Beyond,[0.18]
-IDEXIdeanomics,[0.04]
-HUBCHUB Cyber Security (Israel),[0.61]
-APRNBlue Apron,[0.57]
+BBBYBed Bath & Beyond,"[0.18, 0.28, 0.28]"
+IDEXIdeanomics,"[0.04, 0.04, 0.04]"
+HUBCHUB Cyber Security (Israel),"[0.61, 0.57, 0.57]"
+APRNBlue Apron,"[0.57, 0.57, 0.57]"
 CTVInnovid,[0.98]
 VLCNVolcon,[0.73]
-NUTXNutex Health,[0.51]
-ATERAterian,[0.6]
-YSGYatsen,[0.95]
+NUTXNutex Health,"[0.51, 0.49, 0.49]"
+ATERAterian,"[0.6, 0.6, 0.6]"
+YSGYatsen,"[0.95, 0.94, 0.94]"
 NEXINexImmune,[0.47]
-VRAYViewRay,[0.63]
-TTCFTattooed Chef,[0.66]
-ASTRAstra Space,[0.4]
-MKFGMarkforged,[0.96]
-OGIOrganigram,[0.54]
+VRAYViewRay,"[0.63, 0.53, 0.53]"
+TTCFTattooed Chef,"[0.66, 0.54, 0.54]"
+ASTRAstra Space,"[0.4, 0.36, 0.36]"
+MKFGMarkforged,"[0.96, 0.9, 0.9]"
+OGIOrganigram,"[0.54, 0.44, 0.44]"
 SURFSurface Oncology,[0.87]
-EXPRExpress,[0.81]
-HLBZHelbiz,[0.51]
-DBDDiebold Nixdorf,[0.32]
-BGXXBright Green,[0.91]
-XXII22nd Century Group,[0.67]
-VRMVroom,[0.78]
-HYMCHycroft Mining,[0.38]
-LPTXLeap Therapeutics,[0.66]
-UPWheels Up Experience,[0.36]
+EXPRExpress,"[0.81, 0.62, 0.62]"
+HLBZHelbiz,"[0.51, 0.39, 0.39]"
+DBDDiebold Nixdorf,"[0.32, 0.25, 0.25]"
+BGXXBright Green,"[0.91, 0.82, 0.82]"
+XXII22nd Century Group,"[0.67, 0.62, 0.62]"
+VRMVroom,"[0.78, 0.79, 0.79]"
+HYMCHycroft Mining,"[0.38, 0.34, 0.34]"
+LPTXLeap Therapeutics,"[0.66, 0.69, 0.69]"
+UPWheels Up Experience,"[0.36, 0.31, 0.31]"
 MGTAMagenta Therapeutics,[0.65]
-SPIRSpire Global,[0.72]
-APPHAppHarvest,[0.47]
+SPIRSpire Global,"[0.72, 0.73, 0.73]"
+APPHAppHarvest,"[0.47, 0.45, 0.45]"
 SEELSeelos Therapeutics,[0.99]
-VCSAVacasa,[0.71]
-HYZNHyzon Motors,[0.53]
-EGIOEdgio,[0.57]
-GETRGetaround,[0.51]
+VCSAVacasa,"[0.71, 0.69, 0.69]"
+HYZNHyzon Motors,"[0.53, 0.62, 0.62]"
+EGIOEdgio,"[0.57, 0.49, 0.49]"
+GETRGetaround,"[0.51, 0.57, 0.57]"
 CNEYCN Energy Group.,[0.25]
 PHUNPhunware,[0.64]
 INUVInuvo,[0.37]
 VSTMVerastem,[0.47]
-BLIBerkeley Lights,[0.87]
+BLIBerkeley Lights,"[0.87, 0.71, 0.71]"
 HLTHCue Health,[0.75]
 GSMGGlory Star New Media Group,[0.6]
-CENNCenntro Electric Group,[0.34]
+CENNCenntro Electric Group,"[0.34, 0.31, 0.31]"
 SPRUSpruce Power,[0.84]
-SRNESorrento Therapeutics,[0.32]
-SIDUSidus Space,[0.24]
-OPADOfferpad Solutions,[0.54]
+SRNESorrento Therapeutics,"[0.32, 0.28]"
+SIDUSidus Space,"[0.24, 0.2, 0.2]"
+OPADOfferpad Solutions,"[0.54, 0.65, 0.65]"
 MAPSWM Technology,[1.0]
-FBIOFortress Biotech,[0.53]
+FBIOFortress Biotech,"[0.53, 0.55, 0.55]"
 ADNAdvent Technologies,[0.97]
-LIDRAEye,[0.19]
-CTRMCastor Maritime,[0.65]
+LIDRAEye,"[0.19, 0.18, 0.18]"
+CTRMCastor Maritime,"[0.65, 0.47, 0.47]"
 SEACSeaChange International,[0.46]
 VFFVillage Farms International,[0.73]
 TILInstil Bio,[0.61]
-BZFDBuzzFeed,[0.64]
-SDCSmileDirectClub,[0.38]
+BZFDBuzzFeed,"[0.64, 0.6, 0.6]"
+SDCSmileDirectClub,"[0.38, 0.36, 0.36]"
 CGENCompugen,[0.8]
-KSCPKnightscope,[0.45]
+KSCPKnightscope,"[0.45, 0.42, 0.42]"
 MWGMulti Ways,[0.69]
 SATXSatixfy Communications,[0.49]
-PIRSPieris Pharmaceuticals,[0.87]
-SIVBSVB Financial Group,[0.45]
+PIRSPieris Pharmaceuticals,"[0.87, 0.75, 0.75]"
+SIVBSVB Financial Group,"[0.45, 0.41]"
 SIVBQSVB Financial Group,[0.46]
 SOLOElectrameccanica Vehicles,[0.54]
 SMXSMX (Security Matters) Public,[0.98]
 RBTRubicon Technologies,[0.69]
-DTILPrecision BioSciences,[0.78]
-CIDMCinedigm,[0.29]
-PBTSPowerbridge Technologies,[0.06]
+DTILPrecision BioSciences,"[0.78, 0.74, 0.74]"
+CIDMCinedigm,"[0.29, 0.29, 0.29]"
+PBTSPowerbridge Technologies,"[0.06, 0.06, 0.06]"
 ONDSOndas,[0.91]
 SCORcomScore,[0.99]
 ISPOInspirato,[0.95]
-IZEAIZEA Worldwide,[0.71]
-BBLNBabylon,[0.8]
+IZEAIZEA Worldwide,"[0.71, 0.72]"
+BBLNBabylon,"[0.8, 0.53, 0.53]"
 CORZCore Scientific,[0.35]
 GVPGSE Systems,[0.41]
-EFTReFFECTOR Therapeutics,[0.77]
+EFTReFFECTOR Therapeutics,"[0.77, 0.66, 0.66]"
 TSHATaysha Gene Therapies,[0.78]
+CGCCanopy Growth,"[0.88, 0.88]"
+SONNSonnet BioTherapeutics,"[0.43, 0.43]"
+CLOVClover Health Investments,"[0.95, 0.95]"
+IRNTIronNet,"[0.26, 0.26]"
+PRSOPeraso,"[0.69, 0.69]"
+ATOSAtossa Therapeutics,"[0.87, 0.87]"
+BLNDBlend Labs,"[0.92, 0.92]"
+AFMDAffimed,"[0.83, 0.83]"
+LTCHLatch,"[0.92, 0.92]"
+TCRTAlaunos Therapeutics,"[0.5, 0.5]"
+VIEWView,"[0.18, 0.18]"
+JGAurora Mobile,"[0.31, 0.31]"
+TMCTMC the metals,"[0.68, 0.68]"
+GNPXGenprex,"[0.89, 0.89]"
+AVAHAveanna Healthcare,"[0.98, 0.98]"
+ANGNAngion Biomedica,"[0.95, 0.95]"
+LTRYLottery.com,[0.1]
+UTRSMinerva Surgical,"[0.23, 0.23]"
+LIZILizhi,"[0.8, 0.8]"
+KBNTKubient,"[0.73, 0.73]"
+CRGECharge Enterprises,"[0.99, 0.99]"
+APGNApexigen,"[0.54, 0.54]"
+CYXTCyxtera Technologies,"[0.16, 0.16]"
+AXDXAccelerate Diagnostics,"[0.74, 0.74]"
+MRINMarin Software,"[0.74, 0.74]"
+DAREDaré Bioscience,"[0.98, 0.98]"
+CPTNCepton,"[0.41, 0.41]"
+SHFSSHF,"[0.5, 0.5]"
+CNTXContext Therapeutics,"[0.88, 0.88]"
+GROVGrove Collaborative,"[0.48, 0.48]"
+VGIIVirgin Group Acquisition Corp. II,"[0.48, 0.48]"
+ASMAvino Silver & Gold Mines,"[0.71, 0.71, 0.71, 0.71]"
+EMKREMCORE,"[0.77, 0.77]"
+GOVXGeoVax Labs,"[0.6, 0.6]"
+SISilvergate Capital,[0.95]
+HYFMHydrofarm Holdings Group,[0.98]
