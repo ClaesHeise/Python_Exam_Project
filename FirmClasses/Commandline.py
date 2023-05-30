@@ -72,7 +72,7 @@ def nonDirectChoice(selected_index):
         for tuple in expensive_list:
             print(tuple)
     elif selected_index == "lowest":
-        PandaOp.get_cheapest_firm()
+        print(PandaOp.get_cheapest_firm())
     elif selected_index == "highest":
         print(PandaOp.get_most_expensive_firm())
     elif selected_index == "quit":
