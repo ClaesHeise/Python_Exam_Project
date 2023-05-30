@@ -42,4 +42,7 @@ Most of what we've planed, have been done. We've accomplished making a program, 
 - Web Scraping
     Some of the challenges we encountered with web scraping included dealing with different sorts of websites and their different forms of layering data including an Angular website. This made it significantly harder to gather information since the content was loaded dynamically and structured differently than what we were accustomed to. Another issue we faced was that, after finally identifying a page suitable for scraping, the data we retrieved was mixed in with a large amount of extraneous information. Consequently, we had to develop methods to extract the specific data we needed from the clutter.
 - Pandas?
-- Commandline program?
+- Commandline program
+The biggest challenge with commandline was going to be in the form of formulating information in a readable way,
+the program still gives all 100+ firms when opened, but we believe there were no better alternative other than putting in more menues which would decrease
+the readablity of our code, we prioritized that we should be able to look at the code and know what's going on fast, so we decided to go for less menues.
