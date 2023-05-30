@@ -39,6 +39,7 @@ Most of what we've planed, have been done. We've accomplished making a program, 
 3) And lastly, currently to Web Scrape the Web Site, a admin or likely, has to open the project, and run the .ipynb file, if this process could be automated, so that it just runs once daily, it would become easier for the admin.
 
 ## Challenges:
-- Web Scraping?
+- Web Scraping
+    Some of the challenges we encountered with web scraping included dealing with different sorts of websites and their different forms of layering data including an Angular website. This made it significantly harder to gather information since the content was loaded dynamically and structured differently than what we were accustomed to. Another issue we faced was that, after finally identifying a page suitable for scraping, the data we retrieved was mixed in with a large amount of extraneous information. Consequently, we had to develop methods to extract the specific data we needed from the clutter.
 - Pandas?
 - Commandline program?
