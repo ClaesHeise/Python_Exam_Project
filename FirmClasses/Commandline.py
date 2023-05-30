@@ -66,11 +66,15 @@ def nonDirectChoice(selected_index):
     if selected_index == "lowestp":
         print(PandaOp.cheapest_firm_percentage())
     elif selected_index == "allmin":
-        print(PandaOp.get_all_min)
+        cheap_list = PandaOp.get_all_min()
+        for tuple in cheap_list:
+            print(tuple)
     elif selected_index == "allmax":
-        print(PandaOp.get_all_max)
+        expensive_list = PandaOp.get_all_min()
+        for tuple in expensive_list:
+            print(tuple)
     elif selected_index == "lowest":
-        print(PandaOp.get_cheapest_firm())
+        PandaOp.get_cheapest_firm()
     elif selected_index == "highest":
         print(PandaOp.get_most_expensive_firm())
     elif selected_index == "quit":
