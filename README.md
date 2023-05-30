@@ -6,7 +6,14 @@ This project is based on a WebSite for Penny Stock trading, which the program We
 Using this data and python tools, the data is proccesed to show the user stuff like the firm that performs best, over a duration of time (in percentages), and plots data like this, to show the user, which firm would be best to invest in, not based on their current price, but how they're doing in general.
 
 ## List of used technologies:
-...
+Python is primarily used to write the code, this includes all the data processing tools, saving and loading (saved) data, a user interface etc.
+
+Besides Python, then Jupiter Notebooks is used for the Web Scraping part, so getting the data from an external source.
+
+The website that is Web scraped, is www.marketbeat.com, which has a category for Penny Stocks, where all the needed information, such as names, and the daily price (of the stock) is listed, for each firm.
+
+The libraries used to further process this data, is libraries such as Selenium and beautifulsoup4 for the Web Scraping part. Libraries such as Python CSV and Platform, to properly store the data, as well as load it, if necessary. And the library Pandas, to process the data, both to get singular entities (Firms) returned, numbers (such as the lowest price) or plots of a Firms development.
+
 
 ## Installation guide:
 - The Python CSV library / If installation needed, write this in console: pip install python-csv
@@ -39,6 +46,15 @@ Most of what we've planed, have been done. We've accomplished making a program, 
 3) And lastly, currently to Web Scrape the Web Site, a admin or likely, has to open the project, and run the .ipynb file, if this process could be automated, so that it just runs once daily, it would become easier for the admin.
 
 ## Challenges:
-- Web Scraping?
-- Pandas?
-- Commandline program?
+### Web Scraping
+Some of the challenges we encountered with web scraping included dealing with different sorts of websites and their different forms of layering data including an Angular website. This made it significantly harder to gather information since the content was loaded dynamically and structured differently than what we were accustomed to. Another issue we faced was that, after finally identifying a page suitable for scraping, the data we retrieved was mixed in with a large amount of extraneous information. Consequently, we had to develop methods to extract the specific data we needed from the clutter.
+
+### Pandas
+Some of the challenges concerning Pandas, was mostly to make sense of when to use the different Max and Min functions, which to use, what to use etc.
+
+This is because, when the firms.csv file was read as a Dataframe, the name of the firms would be 1 column, and the prices (as a String) would be the second column. Meaning, if you wanted to get the firm with the cheapest price, of all the firms cheapest prices, you would first have to find each firms cheapest price (found through get_all_min() ), which applies 1 minimum function ( calc_min() ). And seeing as the get_all_min() function returns a list of tuples, to get the cheapest price a for-loop had to be constructed, to run through these (other solutions has been tried, but without any luck, hence why this was more of a challenge, then first imagined)
+
+### Commandline program
+The biggest challenge with commandline was going to be in the form of formulating information in a readable way,
+the program still gives all 100+ firms when opened, but we believe there were no better alternative other than putting in more menues which would decrease
+the readablity of our code, we prioritized that we should be able to look at the code and know what's going on fast, so we decided to go for less menues.

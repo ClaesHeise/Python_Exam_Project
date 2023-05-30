@@ -23,9 +23,7 @@ def selectFirm(firmList):
         print("'lowestp': Show the company with the lowest average cost in procentage")
         print("'allmin': show all minimum prices")
         print("'allmax': show all maximum prices")
-
-        for i, Firm in enumerate(firmList):
-            print(f"{i+1}. {firmList[i].name}")
+        print("'firm': show all firms")
         selected_index = str(input("Enter the number corresponding to your selection: "))
         isNumber = True
         try:
@@ -79,5 +77,8 @@ def nonDirectChoice(selected_index):
         print(PandaOp.get_most_expensive_firm())
     elif selected_index == "quit":
         return 1
+    elif selected_index == "firm":
+        for i, Firm in enumerate(firmList):
+            print(f"{i+1}. {firmList[i].name}")
         
 selectFirm(firmList)
