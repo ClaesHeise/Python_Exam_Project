@@ -14,25 +14,28 @@ firmList = []
 firmList = TestProgram.firms_from_csv()
 
 def selectFirm(firmList):
-    print("Please select a name from the list:")
-    print("'lowest': Show the company with the lowest average cost")
-    print("'highest': Show the company with the highest average cost")
-    print("'lowestp': Show the company with the lowest average cost in procentage")
-    print("'allmin': show all minimum prices")
-    print("'allmax': show all maximum prices")
+    j = 0
+    while(j!=1):
+        print("Please write what you want shown:")
+        print("'quit': ends this application")
+        print("'lowest': Show the company with the lowest average cost")
+        print("'highest': Show the company with the highest average cost")
+        print("'lowestp': Show the company with the lowest average cost in procentage")
+        print("'allmin': show all minimum prices")
+        print("'allmax': show all maximum prices")
 
-    for i, Firm in enumerate(firmList):
-        print(f"{i+1}. {firmList[i].name}")
-    selected_index = str(input("Enter the number corresponding to your selection: "))
-    isNumber = True
-    try:
-        int(selected_index)
-    except ValueError:
-        isNumber = False
-    if(isNumber == True):
-        showAllFirms(selected_index)
-    else:
-        nonDirectChoice(selected_index)
+        for i, Firm in enumerate(firmList):
+            print(f"{i+1}. {firmList[i].name}")
+        selected_index = str(input("Enter the number corresponding to your selection: "))
+        isNumber = True
+        try:
+            int(selected_index)
+        except ValueError:
+            isNumber = False
+        if(isNumber == True):
+            showAllFirms(selected_index)
+        else:
+          j = nonDirectChoice(selected_index)
 
 def showAllFirms(selected_index):
     selected_index = int(selected_index)-1
@@ -70,4 +73,7 @@ def nonDirectChoice(selected_index):
         print(PandaOp.get_cheapest_firm())
     elif selected_index == "highest":
         print(PandaOp.get_most_expensive_firm())
+    elif selected_index == "quit":
+        return 1
+        
 selectFirm(firmList)
