@@ -41,4 +41,7 @@ Most of what we've planed, have been done. We've accomplished making a program, 
 ## Challenges:
 - Web Scraping?
 - Pandas?
-- Commandline program?
+- Commandline program
+The biggest challenge with commandline was going to be in the form of formulating information in a readable way,
+the program still gives all 100+ firms when opened, but we believe there were no better alternative other than putting in more menues which would decrease
+the readablity of our code, we prioritized that we should be able to look at the code and know what's going on fast, so we decided to go for less menues.
